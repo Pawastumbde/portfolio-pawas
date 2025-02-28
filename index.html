@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Pawas Tumbde</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav__bar">
+        <a href="#"><span class="logo nav__logo"></span> Pawas</a>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-3-line"></i>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Pawas Tumbde</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/WhatsApp_Image_2025-02-25_at_17.22.24-removebg-preview.png" alt="Pawas Tumbde profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Pawas Tumbde</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/pawas-tumbde-02944621b/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Pawastumbde'"
+          />
+        </div>
+      </div>
+    </section>
+</section>  
+<section id="meteor-container">
+    <div class="meteor-container">
+        <span class="meteor-text">Pawas Tumbde</span>
+        <div class="meteor" style="top: -20px; left: 90%; animation-delay: 0s;"></div>
+        <div class="meteor" style="top: -50px; left: 80%; animation-delay: 0.5s;"></div>
+        <div class="meteor" style="top: -80px; left: 70%; animation-delay: 1s;"></div>
+        <div class="meteor" style="top: -110px; left: 60%; animation-delay: 1.5s;"></div>
+        <div class="meteor" style="top: -140px; left: 50%; animation-delay: 2s;"></div>
+        <div class="meteor" style="top: -170px; left: 40%; animation-delay: 2.5s;"></div>
+        <div class="meteor" style="top: -200px; left: 30%; animation-delay: 3s;"></div>
+      </div>                 
+</section> 
+<section id="photos">
+  <div class="photo-grid">
+    <img src="assets/WhatsApp Image 2025-02-28 at 02.13.29.jpeg" alt="Random stock image 9" />
+    <img src="assets/WhatsApp Image 2025-02-28 at 02.13.30 (1).jpeg" alt="Random stock image 10" />
+    <img src="assets/WhatsApp Image 2025-02-28 at 02.13.30 (2).jpeg" alt="Random stock image 11" />
+    <img src="assets/WhatsApp Image 2025-02-28 at 02.13.30 (3).jpeg" alt="Random stock image 12" />
+    <img src="assets/WhatsApp Image 2025-02-28 at 02.13.32 (2).jpeg" alt="Random stock image 9" />
+    <img src="assets/WhatsApp Image 2025-02-28 at 02.13.33 (1).jpeg" alt="Random stock image 10" />
+    <img src="assets/WhatsApp Image 2025-02-28 at 02.13.33 (2).jpeg" alt="Random stock image 11" />
+    <img src="assets/WhatsApp Image 2025-02-28 at 02.13.31 (1).jpeg" alt="Random stock image 12" />
+    <img src="assets/WhatsApp Image 2025-02-28 at 02.13.31.jpeg" alt="Random stock image 9" />
+    <img src="assets/WhatsApp Image 2025-02-28 at 02.13.32.jpeg" alt="Random stock image 10" />
+    <img src="assets/WhatsApp Image 2025-02-28 at 02.13.33.jpeg" alt="Random stock image 11" />
+    <img src="assets/WhatsApp Image 2025-02-28 at 02.13.31 (2).jpeg" alt="Random stock image 12" />
+  </div>
+</section>  
+<script>
+  // JavaScript to add animation when images come into view
+  document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".photo-grid img");
+    images.forEach((img, index) => {
+      setTimeout(() => img.classList.add("show"), 250 + index * 50);
+    });
+  });
+</script>      
+</section>
+    <body>
+        <div class="marquee-container">
+            <div class="marquee">
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://avatar.vercel.sh/jack" alt="Jack">
+                        <div>
+                            <figcaption>Jack</figcaption>
+                            <p>@jack</p>
+                        </div>
+                    </div>
+                    <blockquote>I've never seen anything like this before. It's amazing. I love it.</blockquote>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://avatar.vercel.sh/jill" alt="Jill">
+                        <div>
+                            <figcaption>Jill</figcaption>
+                            <p>@jill</p>
+                        </div>
+                    </div>
+                    <blockquote>I don't know what to say. I'm speechless. This is amazing.</blockquote>
+                </div>
+            </div>      
+            <div class="marquee reverse">
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://avatar.vercel.sh/john" alt="John">
+                        <div>
+                            <figcaption>John</figcaption>
+                            <p>@john</p>
+                        </div>
+                    </div>
+                    <blockquote>I'm at a loss for words. This is amazing. I love it.</blockquote>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://avatar.vercel.sh/jane" alt="Jane">
+                        <div>
+                            <figcaption>Jane</figcaption>
+                            <p>@jane</p>
+                        </div>
+                    </div>
+                    <blockquote>I'm at a loss for words. This is amazing. I love it.</blockquote>
+                </div>
+            </div>
+        </div>
+    </body>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/WhatsApp Image 2025-02-25 at 17.39.43.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Frontend Development<br /></p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br /></p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Here, one wants to be acknowledged and given space, but pain and hardship come instead.
+                 What one desires is hindered, and obligations must be fulfilled. Yet,
+                 even in the face of struggles, one finds joy in little things. The world explains its rules, 
+                 and dignity is earned. Choices illuminate the path, but challenges and obstacles remain. 
+                 Still, nothing is impossible!"
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+      <section id="photos">
+        <div class="photo-grid">
+          <img src="./assets/WhatsApp Image 2025-02-22 at 11.25.58 (1).jpeg" alt="Random stock image 7" />
+          <img src="./assets/WhatsApp Image 2025-02-22 at 11.25.58.jpeg" alt="Random stock image 8" />
+          <img src="assets/WhatsApp Image 2025-02-22 at 11.26.25 (1).jpeg" alt="Random stock image 9" />
+          <img src="assets/WhatsApp Image 2025-02-22 at 11.26.25.jpeg" alt="Random stock image 10" />
+          <img src="assets/WhatsApp Image 2025-02-22 at 11.26.26.jpeg" alt="Random stock image 11" />
+          <img src="assets/WhatsApp Image 2025-02-22 at 11.26.27.jpeg" alt="Random stock image 12" />
+          <img src="./assets/WhatsApp Image 2025-02-22 at 11.25.58 (1).jpeg" alt="Random stock image 7" />
+          <img src="./assets/WhatsApp Image 2025-02-22 at 11.25.58.jpeg" alt="Random stock image 8" />
+          <img src="assets/WhatsApp Image 2025-02-22 at 11.26.25 (1).jpeg" alt="Random stock image 9" />
+          <img src="assets/WhatsApp Image 2025-02-22 at 11.26.25.jpeg" alt="Random stock image 10" />
+          <img src="assets/WhatsApp Image 2025-02-22 at 11.26.26.jpeg" alt="Random stock image 11" />
+          <img src="assets/WhatsApp Image 2025-02-22 at 11.26.27.jpeg" alt="Random stock image 12" />
+        </div>
+      </section>  
+      <script>
+        // JavaScript to add animation when images come into view
+        document.addEventListener("DOMContentLoaded", function () {
+          const images = document.querySelectorAll(".photo-grid img");
+          images.forEach((img, index) => {
+            setTimeout(() => img.classList.add("show"), 250 + index * 50);
+          });
+        });
+      </script>      
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Pawastumbde36@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/pawas-tumbde-02944621b/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Pawas tumbe. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
