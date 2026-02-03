@@ -2,498 +2,559 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Design Mastery | pawas tumbde</title>
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Pawas Tumbde</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">PAWAS<span>.</span></a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#client">Clients</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+      <div class="nav__btns">
+        <button class="btn">Hire Me</button>
+      </div>
+    </nav>
+
+    <header id="home">
+      <div class="section__container header__container">
+        <div class="header__content">
+          <h2>Hi, I am</h2>
+          <h1>Pawas Tumbde</h1>
+          <h3>Digital Marketing Expert</h3>
+          <p>
+                       Graphic Designer Experience in creating visual content, presentations, social me-
+dia creatives, and business visuals using design principles and tools.
+• Business Development Executive Skilled in market research, client communica-
+tion, lead generation, and supporting business growth strategies through data-
+driven insights..
+
+          <div class="header__btns">
+            <button class="btn">Download CV</button>
+            <button class="btn">Contact Me</button>
+          </div>
+        </div>
+        <div class="header__image">
+          <img src="assets/header.png" alt="header" />
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container intro__container" id="intro">
+      <div class="intro__image">
+        <img src="assets/intro.png" alt="intro" />
+      </div>
+      <div class="intro__content">
+        <p class="section__subheader">My Intro</p>
+        <h2 class="section__header">About Me</h2>
+        <p class="intro__description">
+          I,m Pawas Tumbde a detail-oriented Business Analyst and Data Analyst with strong expertise in Python, SQL, Machine Learning, and Data Visualization. I excel in extracting insights and improving reporting efficiency to deliver data-driven business solutions. My skills include stakeholder management and cross-functional collaboration, ensuring that I can translate complex datasets into actionable strategies
+        </p>
+        <div class="intro__grid">
+          <h5>
+            <span><i class="ri-user-line"></i></span> Name
+          </h5>
+          <span>:</span>
+          <p>Mary Hardy</p>
+          <h5>
+            <span><i class="ri-phone-line"></i></span> Phone
+          </h5>
+          <span>:</span>
+          <p>09 9876 54321</p>
+          <h5>
+            <span><i class="ri-mail-line"></i></span> Email
+          </h5>
+          <span>:</span>
+          <p>mary.hardy@gmail.com</p>
+        </div>
+        <h4>My Interests</h4>
+        <div class="intro__flex">
+          <div>
+            <span><i class="ri-headphone-line"></i></span> Music
+          </div>
+          <div>
+            <span><i class="ri-briefcase-3-line"></i></span> Travel
+          </div>
+          <div>
+            <span><i class="ri-film-line"></i></span> Movie
+          </div>
+          <div>
+            <span><i class="ri-camera-line"></i></span> Photo
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="choose">
+      <div class="section__container choose__container">
+        <p class="section__subheader">Why Choose Me</p>
+        <h2 class="section__header">My Experties Area</h2>
+        <div class="choose__grid">
+          <div class="choose__card">
+            <div>
+              <h4>Search Engine Optimization</h4>
+              <h4>80%</h4>
+            </div>
+            <div class="choose__progress" style="--progress: 80%"></div>
+          </div>
+          <div class="choose__card">
+            <div>
+              <h4>Social Media Marketing</h4>
+              <h4>95%</h4>
+            </div>
+            <div class="choose__progress" style="--progress: 95%"></div>
+          </div>
+          <div class="choose__card">
+            <div>
+              <h4>Content Strategy</h4>
+              <h4>85%</h4>
+            </div>
+            <div class="choose__progress" style="--progress: 85%"></div>
+          </div>
+          <div class="choose__card">
+            <div>
+              <h4>Pay-Per-Click Advertising</h4>
+              <h4>80%</h4>
+            </div>
+            <div class="choose__progress" style="--progress: 80%"></div>
+          </div>
+          <div class="choose__card">
+            <div>
+              <h4>Email Marketing</h4>
+              <h4>75%</h4>
+            </div>
+            <div class="choose__progress" style="--progress: 75%"></div>
+          </div>
+          <div class="choose__card">
+            <div>
+              <h4>Web Analytics</h4>
+              <h4>85%</h4>
+            </div>
+            <div class="choose__progress" style="--progress: 85%"></div>
+          </div>
+          <div class="choose__card">
+            <div>
+              <h4>Brand Strategy</h4>
+              <h4>95%</h4>
+            </div>
+            <div class="choose__progress" style="--progress: 95%"></div>
+          </div>
+          <div class="choose__card">
+            <div>
+              <h4>Influencer Marketing</h4>
+              <h4>70%</h4>
+            </div>
+            <div class="choose__progress" style="--progress: 70%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container journey__container">
+      <p class="section__subheader">My Qualifications</p>
+      <h2 class="section__header">Awesome Journey</h2>
+      <div class="journey__grid">
+        <div>
+          <div class="journey__grid__header">
+            <span><i class="ri-graduation-cap-line"></i></span> Education
+          </div>
+          <div class="journey__card">
+            <span><i class="ri-circle-fill"></i></span>
+            <div>
+              <h4>Master's in Digital Marketing</h4>
+              <h5>Crafting impactful online strategies</h5>
+              <p>
+                <span><i class="ri-calendar-fill"></i></span> 2018-2020
+              </p>
+            </div>
+          </div>
+          <div class="journey__card">
+            <span><i class="ri-circle-fill"></i></span>
+            <div>
+              <h4>Bachelor's in Business Administration</h4>
+              <h5>Marketing & business strategies</h5>
+              <p>
+                <span><i class="ri-calendar-fill"></i></span> 2016-2018
+              </p>
+            </div>
+          </div>
+          <div class="journey__card">
+            <span><i class="ri-circle-fill"></i></span>
+            <div>
+              <h4>Certified SEO Specialist</h4>
+              <h5>Specialized training</h5>
+              <p>
+                <span><i class="ri-calendar-fill"></i></span> 2017-2020
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="journey__grid__header">
+            <span><i class="ri-briefcase-line"></i></span> Experience
+          </div>
+          <div class="journey__card">
+            <span><i class="ri-circle-fill"></i></span>
+            <div>
+              <h4>Digital Marketing Manager</h4>
+              <h5>XYZ Agency</h5>
+              <p>
+                <span><i class="ri-calendar-fill"></i></span> 2023-2024
+              </p>
+            </div>
+          </div>
+          <div class="journey__card">
+            <span><i class="ri-circle-fill"></i></span>
+            <div>
+              <h4>Social Media Strategist</h4>
+              <h5>ABC Corp</h5>
+              <p>
+                <span><i class="ri-calendar-fill"></i></span> 2021-2023
+              </p>
+            </div>
+          </div>
+          <div class="journey__card">
+            <span><i class="ri-circle-fill"></i></span>
+            <div>
+              <h4>Marketing Intern</h4>
+              <h5>DEF Solutions</h5>
+              <p>
+                <span><i class="ri-calendar-fill"></i></span> 2020-2021
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container service__container" id="service">
+      <p class="section__subheader">My Services</p>
+      <h2 class="section__header">What I Offer</h2>
+      <div class="service__grid">
+        <div class="service__card">
+          <span><i class="ri-window-fill"></i></span>
+          <h4>Website Design</h4>
+          <p>
+            We craft user-friendly interfaces that engage visitors and users and
+            help you achieve your online goals with minimum efforts.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-store-line"></i></span>
+          <h4>E-commerce Solutions</h4>
+          <p>
+            We build secure, scalable, and user-centric online stores that
+            enhance the shopping experience and drive conversions.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-smartphone-line"></i></span>
+          <h4>Mobile Development</h4>
+          <p>
+            From iOS to Android, we create apps on all platforms that deliver
+            seamless performance and keep users coming back for more.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-share-fill"></i></span>
+          <h4>Content Marketing</h4>
+          <p>
+            Our services include creating blog posts, videos, and social media
+            content that drives organic traffic and engagement.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-seo-line"></i></span>
+          <h4>SEO</h4>
+          <p>
+            Our SEO strategies are tailored to your specific goals, helping you
+            reach your target audience and grow your online presence.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-share-circle-line"></i></span>
+          <h4>Digital Marketing</h4>
+          <p>
+            From pay-per-click (PPC) advertising to social media marketing, we
+            ensure your brand stands out in the crowded digital landscape.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="section__container portfolio__container">
+        <p class="section__subheader">My Portfolio</p>
+        <h2 class="section__header">Recent Works</h2>
+        <div class="portfolio__nav">
+          <button class="btn mixitup-control-active" data-filter="all">
+            All
+          </button>
+          <button class="btn" data-filter=".web">Web Apps</button>
+          <button class="btn" data-filter=".game">Games</button>
+          <button class="btn" data-filter=".design">Designs</button>
+        </div>
+        <div class="portfolio__grid">
+          <div class="portfolio__card mix web">
+            <img src="assets/project-1.jpg" alt="project" />
+          </div>
+          <div class="portfolio__card mix web game">
+            <img src="assets/project-2.jpg" alt="project" />
+          </div>
+          <div class="portfolio__card mix design">
+            <img src="assets/project-3.jpg" alt="project" />
+          </div>
+          <div class="portfolio__card mix design web">
+            <img src="assets/project-4.jpg" alt="project" />
+          </div>
+          <div class="portfolio__card mix design game">
+            <img src="assets/project-5.jpg" alt="project" />
+          </div>
+          <div class="portfolio__card mix design">
+            <img src="assets/project-6.jpg" alt="project" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner__container">
+      <div class="banner__content">
+        <h2 class="section__header">Have A Project On Your Mind</h2>
+        <p>
+          Whether it's enhancing your brand's digital presence or launching a
+          targeted marketing campaign, I'm here to help you achieve your goals.
+          Let's collaborate!
+        </p>
+        <div class="banner__btn">
+          <button class="btn">Contact Me</button>
+        </div>
+      </div>
+      <div class="banner__image">
+        <img src="assets/banner.png" alt="banner" />
+      </div>
+    </section>
+
+    <section class="section__container client__container" id="client">
+      <p class="section__subheader">Testimonials</p>
+      <h2 class="section__header">My Client Saying</h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__header">
+                <div class="client__details">
+                  <img src="assets/client-1.jpg" alt="client" />
+                  <div>
+                    <h4>James Carter</h4>
+                    <h5>Marketing Manager at TechNova</h5>
+                  </div>
+                </div>
+                <div class="client__ratings">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+              </div>
+              <p>
+                Collaborating with Pawas was one of the best decisions we made
+                for our business. His creative and strategic approach to social
+                media marketing helped us connect with our target audience in
+                meaningful ways. The engagement rates on our platforms
+                skyrocketed, and his ideas were always fresh and effective.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__header">
+                <div class="client__details">
+                  <img src="assets/client-2.jpg" alt="client" />
+                  <div>
+                    <h4>Sophia Taylor</h4>
+                    <h5>CEO at Urban Trends</h5>
+                  </div>
+                </div>
+                <div class="client__ratings">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+              </div>
+              <p>
+                Pawas digital marketing strategies completely transformed our
+                online presence. From SEO to social media, every campaign she
+                worked on exceeded our expectations. his professionalism and
+                dedication truly stand out. We saw a significant boost in
+                traffic and sales, and we couldn't be happier!
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__header">
+                <div class="client__details">
+                  <img src="assets/client-3.jpg" alt="client" />
+                  <div>
+                    <h4>Emma Wilson</h4>
+                    <h5>Founder of GreenLife Co</h5>
+                  </div>
+                </div>
+                <div class="client__ratings">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+              </div>
+              <p>
+                Pawas in-depth SEO knowledge took our website from being
+                virtually invisible to ranking on the first page for several key
+                search terms. His attention to detail and commitment to
+                delivering results are unparalleled. We've seen a massive
+                increase in traffic and leads, thanks to his efforts.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__header">
+                <div class="client__details">
+                  <img src="assets/client-4.jpg" alt="client" />
+                  <div>
+                    <h4>Andrew Harris</h4>
+                    <h5>Project Lead at Starline Ventures</h5>
+                  </div>
+                </div>
+                <div class="client__ratings">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+              </div>
+              <p>
+                Working with Pawas was an absolute pleasure. His data-driven
+                approach to digital marketing ensured that every campaign was
+                optimized for success. From initial strategy to execution, he
+                was meticulous and results-focused. The measurable improvements
+                we've seen in our marketing metrics speak volumes about His
+                skills.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__header">
+                <div class="client__details">
+                  <img src="assets/client-5.jpg" alt="client" />
+                  <div>
+                    <h4>Lily Martinez</h4>
+                    <h5>Creative Director at DesignEdge</h5>
+                  </div>
+                </div>
+                <div class="client__ratings">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+              </div>
+              <p>
+                Pawas helped us redefine our brand and carve out a unique
+                identity in a highly competitive market. His insights into
+                market trends and consumer behavior were invaluable, and his
+                creative designs and strategies resonated perfectly with our
+                audience. he is a true expert in his field.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="blog" id="blog">
+      <div class="section__container blog__container">
+        <p class="section__subheader">Blog</p>
+        <h2 class="section__header">Latest Updates</h2>
+        <div class="blog__grid">
+          <div class="blog__card">
+            <img src="assets/blog-1.jpg" alt="blog" />
+            <div>
+              <p>20 Jul 2024</p>
+              <h4>The Power of SEO: How to Rank Higher and Drive Traffic</h4>
+            </div>
+          </div>
+          <div class="blog__card">
+            <img src="assets/blog-2.jpg" alt="blog" />
+            <div>
+              <p>15 Oct 2024</p>
+              <h4>Social Media Marketing Trends to Watch in 2024</h4>
+            </div>
+          </div>
+          <div class="blog__card">
+            <img src="assets/blog-3.jpg" alt="blog" />
+            <div>
+              <p>08 Feb 2024</p>
+              <h4>
+                10 Proven Digital Marketing Strategies to Grow Your Business
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="section__container footer__container">
+        <h4>Pawas Tumbde</h4>
+        <ul class="footer__socials">
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+          <a href="#"><i class="ri-linkedin-fill"></i></a>
+          <a href="#"><i class="ri-behance-fill"></i></a>
+          <a href="#"><i class="ri-dribbble-line"></i></a>
+          <a href="#"><i class="ri-pinterest-line"></i></a>
         </ul>
       </div>
-      <div class="nav__bar">
-        <a href="#"><span class="logo nav__logo"></span> Pawas</a>
-        <div class="nav__menu__btn" id="menu-btn">
-          <i class="ri-menu-3-line"></i>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Pawas Tumbde</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+      <div class="footer__bar">
+        Copyright © 2024 Web Design Mastery. All rights reserved.
       </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/WhatsApp_Image_2025-02-25_at_17.22.24-removebg-preview.png" alt="Pawas Tumbde profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Pawas Tumbde</h1>
-        <p class="section__text__p2">Frontend Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/pawas-tumbde-02944621b/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/Pawastumbde'"
-          />
-        </div>
-      </div>
-    </section>
-</section>  
-<section id="meteor-container">
-    <div class="meteor-container">
-        <span class="meteor-text">Pawas Tumbde</span>
-        <div class="meteor" style="top: -20px; left: 90%; animation-delay: 0s;"></div>
-        <div class="meteor" style="top: -50px; left: 80%; animation-delay: 0.5s;"></div>
-        <div class="meteor" style="top: -80px; left: 70%; animation-delay: 1s;"></div>
-        <div class="meteor" style="top: -110px; left: 60%; animation-delay: 1.5s;"></div>
-        <div class="meteor" style="top: -140px; left: 50%; animation-delay: 2s;"></div>
-        <div class="meteor" style="top: -170px; left: 40%; animation-delay: 2.5s;"></div>
-        <div class="meteor" style="top: -200px; left: 30%; animation-delay: 3s;"></div>
-      </div>                 
-</section> 
-<section id="photos">
-  <div class="photo-grid">
-    <img src="assets/WhatsApp Image 2025-02-28 at 02.13.29.jpeg" alt="Random stock image 9" />
-    <img src="assets/WhatsApp Image 2025-02-28 at 02.13.30 (1).jpeg" alt="Random stock image 10" />
-    <img src="assets/WhatsApp Image 2025-02-28 at 02.13.30 (2).jpeg" alt="Random stock image 11" />
-    <img src="assets/WhatsApp Image 2025-02-28 at 02.13.30 (3).jpeg" alt="Random stock image 12" />
-    <img src="assets/WhatsApp Image 2025-02-28 at 02.13.32 (2).jpeg" alt="Random stock image 9" />
-    <img src="assets/WhatsApp Image 2025-02-28 at 02.13.33 (1).jpeg" alt="Random stock image 10" />
-    <img src="assets/WhatsApp Image 2025-02-28 at 02.13.33 (2).jpeg" alt="Random stock image 11" />
-    <img src="assets/WhatsApp Image 2025-02-28 at 02.13.31 (1).jpeg" alt="Random stock image 12" />
-    <img src="assets/WhatsApp Image 2025-02-28 at 02.13.31.jpeg" alt="Random stock image 9" />
-    <img src="assets/WhatsApp Image 2025-02-28 at 02.13.32.jpeg" alt="Random stock image 10" />
-    <img src="assets/WhatsApp Image 2025-02-28 at 02.13.33.jpeg" alt="Random stock image 11" />
-    <img src="assets/WhatsApp Image 2025-02-28 at 02.13.31 (2).jpeg" alt="Random stock image 12" />
-  </div>
-</section>  
-<script>
-  // JavaScript to add animation when images come into view
-  document.addEventListener("DOMContentLoaded", function () {
-    const images = document.querySelectorAll(".photo-grid img");
-    images.forEach((img, index) => {
-      setTimeout(() => img.classList.add("show"), 250 + index * 50);
-    });
-  });
-</script>      
-</section>
-    <body>
-        <div class="marquee-container">
-            <div class="marquee">
-                <div class="review-card">
-                    <div class="review-header">
-                        <img src="https://avatar.vercel.sh/jack" alt="Jack">
-                        <div>
-                            <figcaption>Jack</figcaption>
-                            <p>@jack</p>
-                        </div>
-                    </div>
-                    <blockquote>I've never seen anything like this before. It's amazing. I love it.</blockquote>
-                </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <img src="https://avatar.vercel.sh/jill" alt="Jill">
-                        <div>
-                            <figcaption>Jill</figcaption>
-                            <p>@jill</p>
-                        </div>
-                    </div>
-                    <blockquote>I don't know what to say. I'm speechless. This is amazing.</blockquote>
-                </div>
-            </div>      
-            <div class="marquee reverse">
-                <div class="review-card">
-                    <div class="review-header">
-                        <img src="https://avatar.vercel.sh/john" alt="John">
-                        <div>
-                            <figcaption>John</figcaption>
-                            <p>@john</p>
-                        </div>
-                    </div>
-                    <blockquote>I'm at a loss for words. This is amazing. I love it.</blockquote>
-                </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <img src="https://avatar.vercel.sh/jane" alt="Jane">
-                        <div>
-                            <figcaption>Jane</figcaption>
-                            <p>@jane</p>
-                        </div>
-                    </div>
-                    <blockquote>I'm at a loss for words. This is amazing. I love it.</blockquote>
-                </div>
-            </div>
-        </div>
-    </body>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/WhatsApp Image 2025-02-25 at 17.39.43.jpeg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>Frontend Development<br /></p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br /></p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                 Here, one wants to be acknowledged and given space, but pain and hardship come instead.
-                 What one desires is hindered, and obligations must be fulfilled. Yet,
-                 even in the face of struggles, one finds joy in little things. The world explains its rules, 
-                 and dignity is earned. Choices illuminate the path, but challenges and obstacles remain. 
-                 Still, nothing is impossible!"
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-      <section id="photos">
-        <div class="photo-grid">
-          <img src="./assets/WhatsApp Image 2025-02-22 at 11.25.58 (1).jpeg" alt="Random stock image 7" />
-          <img src="./assets/WhatsApp Image 2025-02-22 at 11.25.58.jpeg" alt="Random stock image 8" />
-          <img src="assets/WhatsApp Image 2025-02-22 at 11.26.25 (1).jpeg" alt="Random stock image 9" />
-          <img src="assets/WhatsApp Image 2025-02-22 at 11.26.25.jpeg" alt="Random stock image 10" />
-          <img src="assets/WhatsApp Image 2025-02-22 at 11.26.26.jpeg" alt="Random stock image 11" />
-          <img src="assets/WhatsApp Image 2025-02-22 at 11.26.27.jpeg" alt="Random stock image 12" />
-          <img src="./assets/WhatsApp Image 2025-02-22 at 11.25.58 (1).jpeg" alt="Random stock image 7" />
-          <img src="./assets/WhatsApp Image 2025-02-22 at 11.25.58.jpeg" alt="Random stock image 8" />
-          <img src="assets/WhatsApp Image 2025-02-22 at 11.26.25 (1).jpeg" alt="Random stock image 9" />
-          <img src="assets/WhatsApp Image 2025-02-22 at 11.26.25.jpeg" alt="Random stock image 10" />
-          <img src="assets/WhatsApp Image 2025-02-22 at 11.26.26.jpeg" alt="Random stock image 11" />
-          <img src="assets/WhatsApp Image 2025-02-22 at 11.26.27.jpeg" alt="Random stock image 12" />
-        </div>
-      </section>  
-      <script>
-        // JavaScript to add animation when images come into view
-        document.addEventListener("DOMContentLoaded", function () {
-          const images = document.querySelectorAll(".photo-grid img");
-          images.forEach((img, index) => {
-            setTimeout(() => img.classList.add("show"), 250 + index * 50);
-          });
-        });
-      </script>      
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">Pawastumbde36@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/pawas-tumbde-02944621b/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Pawas tumbe. All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
